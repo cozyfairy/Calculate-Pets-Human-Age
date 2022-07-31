@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Calculate Your Pets HumanAge</string>
+    <string name="app_name">Calculate Your Pets Human Age</string>
     <string name="instruction_first_editText">Select the species of your pet</string>
     <string name="first_editText_label">species</string>
     <string-array name="pet_options">
