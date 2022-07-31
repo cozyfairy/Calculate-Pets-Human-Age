@@ -18,6 +18,12 @@
     <string name="cockatielOption">Cockatiel</string>
     <string name="africanGrayOption">African Gray Parrot</string>
     <string name="canaryOption">Canary</string>
+    <!--Buttons-->
+    <string name="dateBtnTitle">Pick a Date</string>
+    <string name="selectedDate">Selected Date:</string>
+    <string name="selectedDateOfBirth">Selected DOB:</string>
+    <string name="humanAge">Human Age:</string>
+
 
 
 </resources>
