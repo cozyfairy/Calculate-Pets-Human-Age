@@ -2,22 +2,25 @@
     <string name="app_name">Calculate Your Pets HumanAge</string>
     <string name="instruction_first_editText">Select the species of your pet</string>
     <string name="first_editText_label">species</string>
-    <string name="donkeyOption">Donkey</string>
-    <string name="catOption">Cat</string>
-    <string name="dogOption">Dog</string>
-    <string name="chickenOption">Chicken</string>
-    <string name="duckOption">Duck</string>
-    <string name="hamsterOption">Hamster</string>
-    <string name="horseOption">Horse</string>
-    <string name="monkeyOption">Monkey</string>
-    <string name="mouseOption">Mouse</string>
-    <string name="rabbitOption">Rabbit</string>
-    <string name="pigOption">Pig</string>
-    <string name="ratOption">Rat</string>
-    <string name="budgieOption">Budgie</string>
-    <string name="cockatielOption">Cockatiel</string>
-    <string name="africanGrayOption">African Gray Parrot</string>
-    <string name="canaryOption">Canary</string>
+    <string-array name="pet_options">
+        <item>Donkey</item>
+        <item>Cat</item>
+        <item>Dog</item>
+        <item>Chicken</item>
+        <item>Duck</item>
+        <item>Hamster</item>
+        <item>Horse</item>
+        <item>Monkey</item>
+        <item>Mouse</item>
+        <item>Rabbit</item>
+        <item>Pig</item>
+        <item>Rat</item>
+        <item>Budgie</item>
+        <item>Cockatiel</item>
+        <item>African Gray Parrot</item>
+        <item>Canary</item>
+    </string-array>
+
     <!--Buttons-->
     <string name="dateBtnTitle">Pick a Date</string>
     <string name="selectedDate">Selected Date:</string>
