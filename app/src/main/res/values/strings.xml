@@ -22,7 +22,7 @@
     </string-array>
 
     <!--Buttons-->
-    <string name="dateBtnTitle">Pick a Date</string>
+    <string name="dateBtnTitle">Choose Your Pets DOB</string>
     <string name="selectedDate">Selected Date:</string>
     <string name="selectedDateOfBirth">Selected DOB:</string>
     <string name="humanAge">Human Age:</string>
