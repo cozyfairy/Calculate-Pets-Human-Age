@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="accent">#ff006e</color>
-    <color name="title_bar">#5110AB</color>
-    <color name="status_bar">#3a86ff</color>
-    <color name="dark">#FC864F</color>
-    <color name="main">#FFECB9</color>
+    <color name="status_bar">#1665AA</color>
+    <color name="title_bar">#1F91CB</color>
+    <color name="status_bar2">#1665AA</color>
+    <color name="button_background">#FC864F</color>
+    <color name="background">#D4F8FC</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 </resources>
