@@ -3,4 +3,4 @@ App that caculates the user's pet human age
 Features: 
 DatePickerDialog
 Spinner with drop down list
-![app_image](https://i.ibb.co/jDd2dsf/Screenshot-2022-08-01-121824.png)
+![image](https://user-images.githubusercontent.com/104804771/182207456-6bb2fc1e-dfee-4829-a037-6540fd3703d9.png)
