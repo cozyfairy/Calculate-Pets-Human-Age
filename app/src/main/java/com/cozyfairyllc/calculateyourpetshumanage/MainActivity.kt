@@ -1,35 +1,34 @@
 package com.cozyfairyllc.calculateyourpetshumanage
 
+import android.app.DatePickerDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.MenuItem
 import android.view.View
-import android.widget.AdapterView
-import android.widget.ArrayAdapter
-import android.widget.Spinner
-import android.widget.TextView
+import android.widget.*
+import values.DatePickerFragment
+import java.text.DateFormat
+import java.text.SimpleDateFormat
+import java.time.Year
+import java.util.*
+import java.util.concurrent.TimeUnit
+
 
 /*
     TODO:
-        DROPDOWN MENU
-            create a drop down menu
-            create options for species drop down menu
         DATEPICKER VIEW
             create date picker
             Pick date button
-        SELECTED DATE
-            create selected date label textview
-            create textview for selected date value
         HUMAN AGE
             textview for human age label
             human age value
+            create function that calculates human age
         VALUES
             pick color scheme
             string resources
 
  */
-class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
-    var species : Int = 0
+class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener{
+    private var species : Int = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -41,14 +40,52 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
             spinner.onItemSelectedListener = this
 
         }
+        val dateBtn : Button = findViewById(R.id.dateBtn)
+        dateBtn.setOnClickListener { _ -> showDatePicker() }
+
+
+
+
     }
 
     override fun onItemSelected(parent: AdapterView<*>?, view: View?, pos: Int, id: Long) {
         species = pos
-        println("species: " + species)
     }
 
     override fun onNothingSelected(p0: AdapterView<*>?) {
-        TODO("Not yet implemented")
+
     }
+
+    private fun showDatePicker() {
+        val calendar = Calendar.getInstance()
+        val month = calendar.get(Calendar.MONTH)
+        val day = calendar.get(Calendar.DAY_OF_MONTH)
+        val year = calendar.get(Calendar.YEAR)
+        val timestamp = calendar.timeInMillis
+        DatePickerDialog(this, {view, year,
+                               month, day ->
+
+                val selectedDate : TextView = findViewById(R.id.selectedDateValue)
+                calendar.set(year, month, day)
+                val date = SimpleDateFormat("MMM dd yyyy").format(calendar.time)
+                selectedDate.text = date
+            }, year, month, day).show()
+
+
+
+    }
+
+    private fun updateDate(timestamp : Long) {
+
+        val selectedDate = findViewById<TextView>(R.id.selectedDateValue)
+        val calendar : Calendar = Calendar.getInstance()
+        calendar.timeInMillis = timestamp
+        val date = SimpleDateFormat("MMM dd, yyyy").format(calendar)
+        selectedDate.text = date
+
+    }
+
+
+
+
 }
