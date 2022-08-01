@@ -8,20 +8,6 @@ import android.widget.*
 import java.text.SimpleDateFormat
 import java.util.*
 
-/*
-    TODO:
-        DATEPICKER VIEW
-            create date picker
-            Pick date button
-        HUMAN AGE
-            textview for human age label
-            human age value
-            create function that calculates human age
-        VALUES
-            pick color scheme
-            string resources
-
- */
 class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener{
     private var species : Int = 0
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,10 +23,6 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener{
         }
         val dateBtn : Button = findViewById(R.id.dateBtn)
         dateBtn.setOnClickListener { showDatePicker() }
-
-
-
-
     }
 
     override fun onItemSelected(parent: AdapterView<*>?, view: View?, pos: Int, id: Long) {
@@ -68,19 +50,10 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener{
 
             }, year, month, day).show()
 
-
-
     }
 
     private fun updateTextView(textView : TextView, text : String) {
         textView.text = text
     }
-
-
-
-
-
-
-
 
 }

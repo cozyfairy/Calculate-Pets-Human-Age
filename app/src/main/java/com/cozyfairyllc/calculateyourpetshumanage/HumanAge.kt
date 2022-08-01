@@ -14,19 +14,6 @@ class HumanAge {
             0 -> 3 * calculateYears(dob)
             1 -> calculateCatsHumanAge(dob)
             2 -> calculateDogsAge(dob)
-//            3 -> TODO()
-//            4 -> TODO()
-//            5 -> TODO()
-//            6 -> TODO()
-//            7 -> TODO()
-//            8 -> TODO()
-//            9 -> TODO()
-//            10 -> TODO()
-//            11 -> TODO()
-//            12 -> TODO()
-//            13 -> TODO()
-//            14 -> TODO()
-//            15 -> TODO()
             else -> 0
         }
         private fun calculateDogsAge(dob: Long): Int {
@@ -64,21 +51,6 @@ class HumanAge {
             }
             return humanAge
         }
-
-        //TODO: CHICKEN
-        //TODO: DUCK
-        //TODO: HAMSTER
-        //TODO: HORSE
-        //TODO: MONKEY
-        //TODO: MOUSE
-        //TODO: RABBIT
-        //TODO: RAT
-        //TODO: PIG
-        //TODO: RAT
-        //TODO: BUDGIE
-        //TODO: COCKATIEL
-        //TODO: GREY
-        //TODO: CANARY
 
     }
 }

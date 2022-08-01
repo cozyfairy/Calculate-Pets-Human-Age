@@ -6,8 +6,8 @@
         <item name="colorPrimaryVariant">@color/button_background</item>
         <item name="colorOnPrimary">@color/status_bar</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/background</item>
-        <item name="colorSecondaryVariant">@color/background</item>
+        <item name="colorSecondary">@color/button_background</item>
+        <item name="colorSecondaryVariant">@color/button_background</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">@color/status_bar</item>

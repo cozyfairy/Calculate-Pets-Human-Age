@@ -8,19 +8,27 @@
     app:layout_constraintCircleRadius="20dp"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/header_img"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/mesa_de_trabajo_1_copia"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
 
+        />
     <TextView
         android:id="@+id/pet_spinner_label"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="16dp"
         android:text="@string/first_editText_label"
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/pet_spinner"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/header_img" />
 
     <Spinner
         android:id="@+id/pet_spinner"
@@ -39,8 +47,10 @@
     <Button
         android:id="@+id/dateBtn"
         android:layout_width="wrap_content"
+        android:textColor="@color/white"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:backgroundTint="@color/button_background"
         android:text="@string/dateBtnTitle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
